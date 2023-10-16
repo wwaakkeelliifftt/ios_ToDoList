@@ -10,6 +10,7 @@
 		C747D83D2AC3489700D00764 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C747D83C2AC3489700D00764 /* FirebaseAuth */; };
 		C747D83F2AC3489700D00764 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C747D83E2AC3489700D00764 /* FirebaseFirestore */; };
 		C747D8412AC3489700D00764 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C747D8402AC3489700D00764 /* FirebaseFirestoreSwift */; };
+		C78D59AA2ADDAF6C00788BB9 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78D59A92ADDAF6C00788BB9 /* Extensions.swift */; };
 		C78F4A142AD8D25C0006D9BB /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F4A132AD8D25C0006D9BB /* HeaderView.swift */; };
 		C78F4A162AD8E36A0006D9BB /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78F4A152AD8E36A0006D9BB /* TLButton.swift */; };
 		C79C40DB2ACDE81000C6401A /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79C40DA2ACDE81000C6401A /* ProfileView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C78D59A92ADDAF6C00788BB9 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		C78F4A132AD8D25C0006D9BB /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C78F4A152AD8E36A0006D9BB /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
 		C79C40DA2ACDE81000C6401A /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				C7AA41E52AC34098005917B0 /* GoogleService-Info.plist */,
 				C7F33F4F2AC0A34800ADE4C4 /* ToDoListApp.swift */,
 				C7F33F532AC0A34D00ADE4C4 /* Assets.xcassets */,
+				C78D59A92ADDAF6C00788BB9 /* Extensions.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				C79C40E52ACDE91200C6401A /* ToDoListItemView.swift in Sources */,
 				C79C40F32ACDFAEF00C6401A /* RegistrationViewModel.swift in Sources */,
 				C7F33F502AC0A34800ADE4C4 /* ToDoListApp.swift in Sources */,
+				C78D59AA2ADDAF6C00788BB9 /* Extensions.swift in Sources */,
 				C79C40F72ACDFB1E00C6401A /* ToDoListViewModel.swift in Sources */,
 				C79C40E92ACDE97E00C6401A /* ToDoListItem.swift in Sources */,
 				C79C40DF2ACDE86A00C6401A /* NewItemView.swift in Sources */,
