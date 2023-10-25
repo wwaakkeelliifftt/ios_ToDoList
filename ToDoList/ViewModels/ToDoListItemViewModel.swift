@@ -9,5 +9,12 @@ import Foundation
 
 class ToDoListItemViewModel: ObservableObject {
     
+    @Published var title: String = ""
+    @Published var isDone: Bool = false
+    
     init() {}
+    
+    func toogleIsDone(item: ToDoListItem) {
+        
+    }
 }

@@ -20,26 +20,7 @@ struct RegistrationView: View {
                 angle: -15,
                 background: .orange
             )
-            
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(Color.orange)
-                    .rotationEffect(Angle(degrees: -15))
-                
-                VStack {
-                    Text("Register")
-                        .font(.system(size: 50))
-                        .foregroundColor(Color.white)
-                        .bold()
-                    Text("Start organizing todos")
-                        .font(.system(size: 30))
-                        .foregroundColor(Color.white)
-                }
-                .padding(.top, 30)
-            }
-            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-            .offset(y: -30)
-            
+                        
             // register form
             Form {
                 TextField("Your name", text: $viewModel.name)
@@ -57,8 +38,9 @@ struct RegistrationView: View {
                 TLButton(title: "Create Account", background: .green) {
                     viewModel.register()
                 }
-                .padding(.horizontal, 20)
+                .padding(10)
             }
+            .offset(y: -50)
             
             Spacer()
         }

@@ -5,21 +5,35 @@
 //  Created by tardisomus on 04.10.2023.
 //
 
+import FirebaseFirestoreSwift
 import SwiftUI
 
 struct ToDoListView: View {
     
     @StateObject var viewModel = ToDoListViewModel()
-    private let userId: String
+    @FirestoreQuery var items: [ToDoListItem]
     
     init(userId: String) {
-        self.userId = userId
+        // users/<id>/todos/<entries>
+        self._items = FirestoreQuery(collectionPath: "users/\(userId)/todos")
     }
     
     var body: some View {
         NavigationView {
             VStack {
-                
+                List(items) { item in
+                    ToDoListItemView(item: item)
+                        .swipeActions(allowsFullSwipe: false) {
+                            Button(role: .destructive) {
+                                viewModel.deleteItem(itemId: item.id)
+                            } label: {
+                                Label("delete", systemImage: "trash.fill")
+//                                Text("delete")
+                            }
+                        
+                        }
+                }
+                .listStyle(PlainListStyle())
             }
             .navigationTitle("To Do List")
             .toolbar {
