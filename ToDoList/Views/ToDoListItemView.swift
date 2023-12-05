@@ -12,7 +12,7 @@ struct ToDoListItemView: View {
     let item: ToDoListItem
 
     var body: some View {
-        var date = Date(timeIntervalSince1970: item.dueDate)
+        let date = Date(timeIntervalSince1970: item.dueDate)
             .formatted(date: .abbreviated, time: .shortened)
         
         HStack {
@@ -29,9 +29,10 @@ struct ToDoListItemView: View {
             Spacer()
             
             Button {
-                viewModel.toogleIsDone(item: item)
+                viewModel.toggleIsDone(item: item)
             } label: {
                 Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+                    .foregroundColor(.blue)
             }
         }
     }
